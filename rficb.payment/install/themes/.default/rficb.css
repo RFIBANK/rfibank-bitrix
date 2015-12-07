@@ -1,0 +1,39 @@
+#pay-methods .row {
+    margin: 0;width: 600px;
+}
+
+#pay-methods input[type="radio"] {
+    display: none;
+}
+
+#pay-methods .pay-method{
+    padding:7px 2px;
+}
+
+#pay-methods label {
+    display: block;
+    padding: 5px 15px 10px 50px;
+    border: 1px solid #f2f2f2;
+    background-position: 8px 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#pay-methods input[type="radio"]:checked + label {
+    border-color: #4a0d66;
+}
+
+.pay-method.spg label { background-image: url('icons/rficb/ico_card.png'); }
+.pay-method.mc label { background-image: url('icons/rficb/ico_phone.png'); }
+.pay-method.wm label { background-image: url('icons/rficb/ico_wm.png'); }
+.pay-method.ym label { background-image: url('icons/rficb/ico_ym.png'); }
+.pay-method.qiwi label { background-image: url('icons/rficb/ico_qiwi.png'); }
+
+.pay-method span {
+    display: table-cell;
+    height: 50px;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+}
