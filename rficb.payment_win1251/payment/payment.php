@@ -38,7 +38,7 @@ document.getElementById("payment_type").value = paytype;
     <input type="hidden" name="key" value="<?echo $key?>" />
     <input type="hidden" name="cost" value="<?echo $cost?>" />
     <input type="hidden" name="name" value="<?echo $name?>" />
-    <input type="hidden" name="default_email" value="<?echo $email?>" />
+    <input type="hidden" name="email" value="<?echo $email?>" />
     <input type="hidden" name="order_id" value="0" />
     <input type="hidden" name="comment" value="<?echo $order_id?>" />
 	<?if ($com) {

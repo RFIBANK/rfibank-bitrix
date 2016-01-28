@@ -1,4 +1,4 @@
-<?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
+п»ї<?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 IncludeModuleLangFile(__FILE__);
 if(!CModule::IncludeModule("rficb.payment")) return;?>
 <link rel="stylesheet" type="text/css" href="/bitrix/themes/.default/rficb.css" /> 
@@ -38,7 +38,7 @@ document.getElementById("payment_type").value = paytype;
     <input type="hidden" name="key" value="<?echo $key?>" />
     <input type="hidden" name="cost" value="<?echo $cost?>" />
     <input type="hidden" name="name" value="<?echo $name?>" />
-    <input type="hidden" name="default_email" value="<?echo $email?>" />
+    <input type="hidden" name="email" value="<?echo $email?>" />
     <input type="hidden" name="order_id" value="0" />
     <input type="hidden" name="comment" value="<?echo $order_id?>" />
 	<?if ($com) {
@@ -66,7 +66,7 @@ document.getElementById("payment_type").value = paytype;
  					if ($wm) {?>
               <div class="col-xs-<?php echo $i;?> pay-method ym">
                 <input type="radio" name="pay_type" id="pay-method-ym" value="ym" onclick="ptype('ym')">
-                <label for="pay-method-ym"><span>Яндекс. Деньги</span></label>
+                <label for="pay-method-ym"><span>РЇРЅРґРµРєСЃ. Р”РµРЅСЊРіРё</span></label>
               </div>
 				<?php } 
 				}
@@ -75,7 +75,7 @@ if ($mc) {?>
 <input type="hidden" name="phone_number" value="<?echo $phone?>" />
   <div class="col-xs-<?php echo $i;?> pay-method mc">
                 <input type="radio" name="pay_type" id="pay-method-mc" value="mc" onclick="ptype('mc')">
-                <label for="pay-method-mc"><span>Мобильный платёж</span></label>
+                <label for="pay-method-mc"><span>РњРѕР±РёР»СЊРЅС‹Р№ РїР»Р°С‚С‘Р¶</span></label>
               </div>
  <?php }
  					if ($qiwi) {?>
